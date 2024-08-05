@@ -47,6 +47,15 @@ const updateItem = async (req: Request, res: Response): Promise<void> => {
 
         if (isNaN(id) || !validateItem({ name, quantity, bought })) {
             return res.status(400).json({ message: 'Invalid data.' });
+
+
+        }
+        
+        const item = await itemRepository.getItemById(id);
+        if (!item) {
+            return res.status(404).json({ message: 'Item not found.' });
+        }else if(item.bought) {
+            return res.status(400).json({ message: 'cannot be deleted.' });
         }
 
         const updatedItem = await itemRepository.updateItem(id, { name, quantity, bought });
@@ -63,6 +72,13 @@ const deleteItem = async (req: Request, res: Response): Promise<void> => {
 
         if (isNaN(id)) {
             return res.status(400).json({ message: 'Invalid ID.' });
+        }
+
+        const item = await itemRepository.getItemById(id);
+        if (!item) {
+            return res.status(404).json({ message: 'Item not found.' });
+        } else if(item.bought) {
+            return res.status(400).json({ message: 'cannot be deleted.' });
         }
 
         await itemRepository.deleteItem(id);
