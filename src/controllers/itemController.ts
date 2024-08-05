@@ -1,4 +1,4 @@
-import itemService from "../service/itemService";
+import itemService from "../repository/itemRepository";
 
 const getAllItems = async (req, res) => {
     try {
@@ -20,7 +20,7 @@ const createItem = async (req, res) => {
         const newItem = await itemService.createItem({ name, quantity });
         res.status(201).json(newItem);
     } catch (error) {
-        res.status(500).json({ message: "Server internal error" });
+        res.status(400).json({ message: "Invalid schema" });
     }
 };
 
