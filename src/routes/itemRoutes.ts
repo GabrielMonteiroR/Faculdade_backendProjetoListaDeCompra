@@ -1,6 +1,7 @@
-import express from 'express';
-const router = express.Router();
+import express, { Router } from 'express';
 import itemController from '../controllers/itemController';
+
+const router: Router = express.Router();
 
 router.get('/', itemController.getAllItems);
 router.post('/', itemController.createItem);
