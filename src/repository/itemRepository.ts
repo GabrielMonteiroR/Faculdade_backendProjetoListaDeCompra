@@ -1,29 +1,28 @@
 import { PrismaClient } from '@prisma/client';
+import  Item  from '../entity/Item';
 
 const prisma = new PrismaClient();
 
-const getAllItems = async () => {
+const getAllItems = async (): Promise<Item[]> => {
     return await prisma.item.findMany();
 }
 
-const createItem = async (itemData) => {
-    return await prisma.item.create(
-        {
-            data: itemData
-        });
+const createItem = async (itemData: Omit<Item, 'id' | 'createdAt' | 'updatedAt'>): Promise<Item> => {
+    return await prisma.item.create({
+        data: itemData
+    });
 }
 
-const updateItem = async (id, updatedItem) => {
+const updateItem = async (id: number, updatedItem: Partial<Omit<Item, 'id' | 'createdAt' | 'updatedAt'>>): Promise<Item> => {
     return await prisma.item.update({
-        where: { id: Number(id) },
+        where: { id },
         data: updatedItem
     });
 }
 
-
-const deleteItem = async (id) => {
+const deleteItem = async (id: number): Promise<Item> => {
     return await prisma.item.delete({
-        where: { id: Number(id) }
+        where: { id }
     });
 }
 

@@ -1,54 +1,81 @@
-import itemService from "../repository/itemRepository";
+import { Request, Response } from 'express';
+import itemRepository from '../repository/itemRepository';
+import  Item  from '../entity/Item';
 
-const getAllItems = async (req, res) => {
+const validateQuantity = (quantity: any): quantity is number => {
+    return typeof quantity === 'number' && quantity >= 0;
+};
+
+const validateItem = (item: Partial<Item>): boolean => {
+    const { name, quantity, bought } = item;
+    return typeof name === 'string' &&
+           validateQuantity(quantity) &&
+           typeof bought === 'boolean';
+};
+
+const getAllItems = async (req: Request, res: Response): Promise<void> => {
     try {
-        const items = await itemService.getAllItems();
+        const items: Item[] = await itemRepository.getAllItems();
         res.json(items);
-    } catch {
-        res.status(404).json({ message: "Not found." });
+    } catch (error) {
+        res.status(500).json({ message: "Internal server error" });
     }
 };
 
-const createItem = async (req, res) => {
+const createItem = async (req: Request, res: Response): Promise<void> => {
     try {
         const { name, quantity } = req.body;
 
-        if (isNaN(quantity) || quantity < 0) {
-            return res.status(400).json({ message: 'Invalid quantity.' });
+        // Validação dos dados
+        if (typeof name !== 'string' || !validateQuantity(quantity)) {
+            return res.status(400).json({ message: 'Invalid data.' });
         }
 
-        const newItem = await itemService.createItem({ name, quantity });
+        const newItem = await itemRepository.createItem({ name, quantity, bought: false });
+
         res.status(201).json(newItem);
     } catch (error) {
+        console.error(error); // Log do erro para depuração
         res.status(400).json({ message: "Invalid schema" });
     }
 };
 
-const updateItem = async (req, res) => {
+const updateItem = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { id } = req.params;
+        const id = parseInt(req.params.id, 10);
         const { name, quantity, bought } = req.body;
 
-        const updatedItem = await itemService.updateItem(id, { name, quantity, bought });
+        if (isNaN(id) || !validateItem({ name, quantity, bought })) {
+            return res.status(400).json({ message: 'Invalid data.' });
+        }
+
+        const updatedItem = await itemRepository.updateItem(id, { name, quantity, bought });
         res.json(updatedItem);
     } catch (error) {
+        console.error(error); 
         res.status(500).json({ message: "Internal server error." });
     }
 };
 
-const deleteItem = async (req, res) => {
+const deleteItem = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { id } = req.params;
-        await itemService.deleteItem(id);
+        const id = parseInt(req.params.id, 10);
+
+        if (isNaN(id)) {
+            return res.status(400).json({ message: 'Invalid ID.' });
+        }
+
+        await itemRepository.deleteItem(id);
         res.json({ message: "Item successfully deleted." });
     } catch (error) {
+        console.error(error);
         res.status(500).json({ message: "Internal server error." });
     }
 };
 
 export default {
     getAllItems,
+    createItem,
     updateItem,
-    deleteItem,
-    createItem
+    deleteItem
 };
