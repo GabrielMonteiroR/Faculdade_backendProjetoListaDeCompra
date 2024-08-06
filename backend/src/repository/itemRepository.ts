@@ -7,6 +7,12 @@ const getAllItems = async (): Promise<Item[]> => {
     return await prisma.item.findMany();
 }
 
+const getItemById = async (id: number): Promise<Item | null> => {
+    return await prisma.item.findUnique({
+        where: { id }
+    });
+};
+
 const createItem = async (itemData: Omit<Item, 'id' | 'createdAt' | 'updatedAt'>): Promise<Item> => {
     return await prisma.item.create({
         data: itemData
@@ -28,6 +34,7 @@ const deleteItem = async (id: number): Promise<Item> => {
 
 export default {
     getAllItems,
+    getItemById,
     createItem,
     deleteItem,
     updateItem
