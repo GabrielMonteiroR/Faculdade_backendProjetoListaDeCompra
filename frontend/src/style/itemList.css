@@ -1,0 +1,143 @@
+.itensContainer,
+.darkItensContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.scrollContainer {
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #053e38 transparent;
+}
+
+.darkScrollContainer {
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #14140f transparent;
+}
+
+.darkScrollContainer::-webkit-scrollbar,
+.scrollContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.darkScrollContainer::-webkit-scrollbar-thumb {
+  background-color: #14140f;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background-color: #053e38;
+  border-radius: 4px;
+  visibility: hidden;
+}
+
+.scrollContainer:hover::-webkit-scrollbar-thumb,
+.darkScrollContainer:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.scrollContainer::-webkit-scrollbar-track,
+.darkScrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.listPending,
+.listCompleted,
+.darkListPending,
+.darkListCompleted {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.halfItem,
+.darkHalfItem {
+  height: 50px;
+  overflow: hidden;
+}
+
+.halfItem > *,
+.darkHalfItem > * {
+  height: 100px;
+  margin-top: -50px;
+}
+
+.subtitleConcluido {
+  border-bottom: 2px solid #1a6c0d;
+  color: #14140f;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.darkSubtitleConcluido {
+  border-bottom: 2px solid #f26800;
+  color: #14140f;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+.subtitleAtivo {
+  border-bottom: 2px solid #b71717;
+  color: #14140f;
+  padding-bottom: 10px;
+  font-family: Poppins;
+  margin-right: 20px;
+}
+
+.darkSubtitleAtivo {
+  border-bottom: 2px solid #f26800;
+  color: #14140f;
+  padding-bottom: 10px;
+  font-family: Poppins;
+  margin-right: 20px;
+}
+
+.listCompleted,
+.darkListCompleted {
+  list-style-type: "none";
+  padding: 0;
+  margin-right: 10px;
+}
+
+.listPending,
+.darkListPending {
+  list-style-type: "none";
+  padding: 0;
+  margin-right: 10px;
+}
+
+.itemDarkPending {
+  border: 1px solid #f26800;
+  background-color: #ffffff;
+  margin-right: 10px;
+  padding-left: 20px;
+  height: 330px;
+}
+
+.itemPending {
+  border: 1px solid #053e38;
+  background-color: #c1d4da;
+  margin-right: 10px;
+  padding-left: 20px;
+  height: 330px;
+}
+
+.itemDarkConclude {
+  border: 1px solid #f26800;
+  background-color: #ffffff;
+  margin-left: 10px;
+  padding-left: 20px;
+  height: 330px;
+}
+
+.itemConclude {
+  border: 1px solid #053e38;
+  background-color: #c1d4da;
+  margin-left: 10px;
+  padding-left: 20px;
+  height: 330px;
+}

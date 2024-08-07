@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+
+.logo,
+.darkLogo {
+  width: 300px;
+}
+
+.listItemContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: Poppins;
+  background-color: #eeeeee;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.darkListItemContainer {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: Poppins;
+  background-color: #14140f;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.divEsquerda,
+.darkDivEsquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divDireita,
+.darkDivDireita {
+  margin-right: 80px;
+}
+
+.minha {
+  color: #14140f;
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.minhaDark {
+  color: #ffffff;
+  font-size: 70px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.lista {
+  color: #14140f;
+  font-size: 90px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.listaDark {
+  color: #ffffff;
+  font-size: 90px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.de {
+  color: #14140f;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.deDark {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.compras {
+  color: #053e38;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.comprasDark {
+  color: #f26800;
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.buttonTheme {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  background-color: transparent;
+  border: transparent;
+  width: 40px;
+  height: 40px;
+  color: #053e38;
+}
+
+.darkButtonTheme {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  background-color: transparent;
+  border: transparent;
+  width: 40px;
+  height: 40px;
+  color: #f26800;
+}
