@@ -1,8 +1,8 @@
-# Backend 
+# Backend
 
-## Rodando o projeto 
+## Rodando o projeto
 
-1. Instale dependências 
+1. Instale dependências
 
 `npm install`
 
@@ -19,14 +19,8 @@
 - GET [http://localhost:4000/](http://localhost:4000/)
 
 `Response`
+
 ```Json
-[
-  {
-    "id": 1,
-    "name": "Leite",
-    "quantity": 2,
-    "bought": false,
-    "createdAt": "2024-08-07T12:34:56.789Z",
     "updatedAt": "2024-08-07T12:34:56.789Z"
   },
   {
@@ -42,15 +36,18 @@
 ```
 
 - POST [http://localhost:4000/](http://localhost:4000/)
-  
+
 `Request`
+
 ```Json
 {
   "name": "Nome do Item",
   "quantity": 2
 }
 ```
+
 `Response`
+
 ```Json
 {
     "id": 3,
@@ -63,8 +60,9 @@
 ```
 
 - PUT [http://localhost:4000/:id](http://localhost:4000/:id)
-  
+
 `Request`
+
 ```Json
 {
   "name": "Nome do Item",
@@ -73,7 +71,9 @@
 }
 
 ```
+
 `Response`
+
 ```Json
 {
     "id": 3,
@@ -86,11 +86,11 @@
 ```
 
 - DELETE [http://localhost:4000/:id](http://localhost:4000/:id)
-  
+
 `Response`
+
 ```Json
 {
     "message": "Item successfully deleted."
 }
 ```
-

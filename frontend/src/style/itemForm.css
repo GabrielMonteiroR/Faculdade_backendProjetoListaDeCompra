@@ -1,0 +1,220 @@
+.itemForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #053e38;
+  background-color: #c1d4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.darkItemForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #f26800;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.darkInputContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.inputNameItem {
+  margin-right: 16px;
+  padding: 10px;
+  border: 1px solid #053e38;
+  background-color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.darkInputNameItem {
+  margin-right: 16px;
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #14140f;
+  background-color: #14140f;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputQuantItem {
+  padding: 10px;
+  border: 1px solid #053e38;
+  background-color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.darkInputQuantItem {
+  padding: 10px;
+  color: #ffffff;
+  border: 1px solid #14140f;
+  background-color: #14140f;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputNameItem {
+  margin-right: 16px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #053e38;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputDarkNameItem {
+  margin-right: 16px;
+  padding: 10px;
+  background-color: #14140f;
+  border: 1px solid #f26800;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputQuantItem {
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #053e38;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputDarkQuantItem {
+  padding: 10px;
+  background-color: #14140f;
+  border: 1px solid #f26800;
+  font-size: 16px;
+  outline: none;
+}
+
+.buttonAdd {
+  padding: 10px;
+  border: none;
+  background-color: #053e38;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.darkButtonAdd {
+  padding: 10px;
+  border: none;
+  background-color: #f26800;
+  color: #14140f;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.inputNameItem {
+  color: #14140f;
+}
+
+.inputDarkNameItem {
+  color: #ffffff;
+}
+
+.inputNameItem::placeholder {
+  color: #000000;
+}
+
+.inputDarkNameItem::placeholder {
+  color: #ffffff;
+}
+
+.inputNameItem::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.inputDarkNameItem::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.inputNameItem:-moz-placeholder {
+  color: #000000;
+}
+
+.inputDarkNameItem:-moz-placeholder {
+  color: #ffffff;
+}
+
+.inputNameItem::-moz-placeholder {
+  color: #000000;
+}
+
+.inputDarkNameItem::-moz-placeholder {
+  color: #ffffff;
+}
+
+.inputNameItem:-ms-input-placeholder {
+  color: #000000;
+}
+
+.inputDarkNameItem:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.inputQuantItem {
+  color: #14140f;
+}
+
+.inputDarkQuantItem {
+  color: #ffffff;
+}
+
+.inputQuantItem::placeholder {
+  color: #000000;
+}
+
+.inputDarkQuantItem::placeholder {
+  color: #ffffff;
+}
+
+.inputQuantItem::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.inputDarkQuantItem::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.inputQuantItem:-moz-placeholder {
+  color: #000000;
+}
+
+.inputDarkQuantItem:-moz-placeholder {
+  color: #ffffff;
+}
+
+.inputQuantItem::-moz-placeholder {
+  color: #000000;
+}
+
+.inputDarkQuantItem::-moz-placeholder {
+  color: #ffffff;
+}
+
+.inputQuantItem:-ms-input-placeholder {
+  color: #000000;
+}
+
+.inputDarkQuantItem:-ms-input-placeholder {
+  color: #ffffff;
+}

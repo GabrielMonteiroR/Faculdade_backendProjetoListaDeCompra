@@ -1,0 +1,135 @@
+.listItem {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: "#f9f9f9";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #14140f;
+}
+
+.itemName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.quantItem {
+  display: block;
+  font-size: 16px;
+  color: #14140f;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.dateCreate {
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.dateUpdate {
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.buttonEdit {
+  margin-right: 0px;
+  padding: 8px 12px;
+  border: none;
+  color: #030148;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonDelete {
+  margin-right: 0px;
+  padding: 8px 12px;
+  border: none;
+  color: #f44336;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonBuy {
+  padding: 8px 12px;
+  border: none;
+  color: #1a6c0d;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.darkListItem {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: "#f9f9f9";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #14140f;
+}
+
+.darkItemName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.darkQuantItem {
+  display: block;
+  font-size: 16px;
+  color: #14140f;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-weight: 300;
+}
+
+.darkDateCreate {
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.darkDateUpdate {
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.darkButtonEdit {
+  margin-right: 0px;
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #14140f;
+}
+
+.darkButtonDelete {
+  margin-right: 0px;
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #14140f;
+}
+
+.darkButtonBuy {
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #f26800;
+}
