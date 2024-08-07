@@ -54,8 +54,6 @@ const updateItem = async (req: Request, res: Response): Promise<void> => {
         const item = await itemRepository.getItemById(id);
         if (!item) {
             return res.status(404).json({ message: 'Item not found.' });
-        }else if(item.bought) {
-            return res.status(400).json({ message: 'cannot be deleted.' });
         }
 
         const updatedItem = await itemRepository.updateItem(id, { name, quantity, bought });
