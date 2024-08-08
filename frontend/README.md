@@ -63,47 +63,47 @@ Após analisar cada uma das funcionalidades e discutirmos com a equipe de desenv
 Após cada uma dessas análises chegamos a prototipação final e iniciamos o processo de desenvolvimento da tela.
 
 ### Conclusão do desenvolvimento da tela e suas funcionalidades
-Tela inicial em light mode, realizando o click no botão de transição entre os temas.
+###### Tela inicial em light mode, realizando o click no botão de transição entre os temas.
 ![Tela de início em light mode](DocImages/1.jpeg)
 
-Tela inicial em dark mode.
+###### Tela inicial em dark mode.
 ![Tela de início em dark mode](DocImages/2.jpeg)
 
-Utilizando o input de nome para adicionar nome ao item.
+###### Utilizando o input de nome para adicionar nome ao item.
 ![Input de nome](DocImages/3.jpeg)
 
-Utilizando o input de quantidade para adicionar quantidade ao item.
+###### Utilizando o input de quantidade para adicionar quantidade ao item.
 ![Input de quantidade](DocImages/4.jpeg)
 
-Utilizando o botão de adicionar para levar os dados digitados até a lista de pendentes.
+###### Utilizando o botão de adicionar para levar os dados digitados até a lista de pendentes.
 ![Botão de adicionar item](DocImages/5.jpeg)
 
-Utilizando a opção de editar item, que leva os dados do item para o mesmo campo alterando o botão para "Atualizar item".
+###### Utilizando a opção de editar item, que leva os dados do item para o mesmo campo alterando o botão para "Atualizar item".
 ![Botão de editar item](DocImages/6.jpeg)
 
-Atualizando a quantidade do item de 12 para 14.
+###### Atualizando a quantidade do item de 12 para 14.
 ![Atualizando a quantidade do item](DocImages/7.jpeg)
 
-Demonstrando que o item foi atualizado para a quantidade descrita anteriormente (14).
+###### Demonstrando que o item foi atualizado para a quantidade descrita anteriormente (14).
 ![Quantidade atualizada](DocImages/8.jpeg)
 
-Utilizando o botão de excluir item da lista.
+###### Utilizando o botão de excluir item da lista.
 ![Utilizando o botão de excluir item](DocImages/9.jpeg)
 
-Demonstrando que o item foi excluído da lista.
+###### Demonstrando que o item foi excluído da lista.
 ![Lista vazia após a exclusão do item](DocImages/10.jpeg)
 
-Após adicionar novamente o item à lista, realizamos a conclusão do item no botão "marcando como comprado".
+###### Após adicionar novamente o item à lista, realizamos a conclusão do item no botão "marcando como comprado".
 ![Botão de concluir a atividade pendente](DocImages/11.jpeg)
 
-Demonstrando que a atividade foi levada para a lista de concluído
+###### Demonstrando que a atividade foi levada para a lista de concluído
 ![Item deslocado para a lista de concluído](DocImages/12.jpeg)
 
-Utilizando o botão de retornar item para a lista de pendentes
+###### Utilizando o botão de retornar item para a lista de pendentes
 ![Botão de retorno do item para a lista de pendentes](DocImages/13.jpeg)
 
-Demonstrando que o item retornou a lista de pendentes com a data de adição dele
+###### Demonstrando que o item retornou a lista de pendentes com a data de adição dele
 ![Item deslocado para a lista de pendentes](DocImages/14.jpeg)
 
-Demonstrando o software com um item na lista de pendentes no light mode
+###### Demonstrando o software com um item na lista de pendentes no light mode
 ![Software light mode com item na lista de pendentes](DocImages/15.jpeg)
