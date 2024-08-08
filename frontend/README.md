@@ -40,9 +40,9 @@ Fomos em busca de suprir tudo aquilo que nos foi solicitado e para isso listamos
 * Botão para excluir atividade.
 * Botão para marcar atividade como concluída.
 
-![Tela de prototipação light mode](DocImages/16.jpeg)
+![Tela de prototipação light mode](DocImages/16.jpeg.png)
 ###### Tela de prototipação light mode
-![Tela de prototipação light mode](DocImages/17.jpeg)
+![Tela de prototipação light mode](DocImages/17.jpeg.png)
 ###### Tela de prototipação dark mode
 
 Após analisar cada uma das funcionalidades e discutirmos com a equipe de desenvolvimento, viu-se a necessidade de algumas alterações e adições que seriam essenciais para o funcionamento fluído, intuitivo e confortável do software, tornando a listagem de necessidades do software um pouco maior.
