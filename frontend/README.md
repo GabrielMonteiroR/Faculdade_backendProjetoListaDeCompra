@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Minha Lista de Compras - Tropa do Japa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Documentação front-end
 
-## Available Scripts
+### Proposta dos stakeholders
 
-In the project directory, you can run:
+> _Propomos o desenvolvimento de um aplicativo de lista de compras chamado "Minha Lista de Compras", que incluirá funcionalidades de adicionar, editar, remover e marcar itens como comprados. O desenvolvimento será realizado utilizando metodologia ágil._
 
-### `npm start`
+#### Solicitações prévias dos stakeholders
+##### Ideia do Software:
+* Um aplicativo de lista de compras chamado "Minha Lista de Compras".
+##### Requisitos:
+1. Adicionar Itens:
+O usuário deve poder adicionar itens à lista de compras com nome e quantidade.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Editar Itens:
+O usuário deve poder editar os itens na lista (nome e quantidade).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Remover Itens:
+O usuário deve poder remover itens da lista.
 
-### `npm test`
+4. Marcar Itens como Comprados:
+O usuário deve poder marcar itens como comprados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. Interface Simples:
+A interface deve ser fácil de usar e intuitiva.
 
-### `npm run build`
+_A partir dessas informações e solicitações, iniciamos as discussões acerca do que deveríamos desenvolver e de qual maneira poderíamos tornar esse software usual, estilizado, rápido e intuitivo.
+Para isso, partimos para a divisão dos trabalhos para que a produção pudesse ocorrer. No front-end iniciamos com a prototipação da tela para termos uma ideia de como iríamos distribuir as funções solicitadas pelos stakeholders para que tornasse o uso simples e eficaz, aproveitando para criar uma ideia de estilização do projeto._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prototipação
+Fomos em busca de suprir tudo aquilo que nos foi solicitado e para isso listamos tudo que precisaríamos no software.
+##### Listagem de necessidades do software
+* Tela inicial.
+* Título de descrição do software.
+* Local para recebimento dos dados (Nome do item e quantidade).
+* Botão para adicionar itens à lista.
+* Listagem distintas para atividades pendentes e atividades concluídas.
+* Botão para editar atividade.
+* Botão para excluir atividade.
+* Botão para marcar atividade como concluída.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Tela de prototipação light mode](DocImages/16.jpeg)
+###### Tela de prototipação light mode
+![Tela de prototipação light mode](DocImages/17.jpeg)
+###### Tela de prototipação dark mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Após analisar cada uma das funcionalidades e discutirmos com a equipe de desenvolvimento, viu-se a necessidade de algumas alterações e adições que seriam essenciais para o funcionamento fluído, intuitivo e confortável do software, tornando a listagem de necessidades do software um pouco maior.
 
-### `npm run eject`
+##### Novas adições
+* *_Logo dos usuários na tela principal._*
+* *_Necessidade de outro local para atualização dos dados a partir da função de edição._*
+* *_Necessidade de outro botão para atualizar os itens ao invés de "adicioná-los"._*
+* *_Adicionar botão de retomar a atividade concluída para pendente._*
+* *_Necessidade de adicionar a data adição de itens à lista pendentes._*
+* *_Necessidade de adicionar a data de compra dos itens à lista de concluído._*
+* *_Necessidade de eliminar os botões de editar, excluir e marcar como concluído na listagem de concluídos._*
+* *_Necessidade de utilizar o mesmo input para adição e edição dos itens*_
+* *_Adição do botão para transição do light para dark mode._*
+* *_Buscamos adaptar a tela para que não exista barra de rolagem na mesma, apenas dentro das lista de pendentes e concluídos. Tornando a imersão no software mais intuitiva e mais fluída quanto ao primeiro protótipo que a cada item adicionava uma barra de rolagem ainda maior na página._*
+* *_Necessidade de diferenciar o nome dos itens em cada uma das listas, sendo o item riscado quando estiver concluído*_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Após cada uma dessas análises chegamos a prototipação final e iniciamos o processo de desenvolvimento da tela.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Conclusão do desenvolvimento da tela e suas funcionalidades
+Tela inicial em light mode, realizando o click no botão de transição entre os temas.
+![Tela de início em light mode](DocImages/1.jpeg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Tela inicial em dark mode.
+![Tela de início em dark mode](DocImages/2.jpeg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Utilizando o input de nome para adicionar nome ao item.
+![Input de nome](DocImages/3.jpeg)
 
-## Learn More
+Utilizando o input de quantidade para adicionar quantidade ao item.
+![Input de quantidade](DocImages/4.jpeg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Utilizando o botão de adicionar para levar os dados digitados até a lista de pendentes.
+![Botão de adicionar item](DocImages/5.jpeg)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utilizando a opção de editar item, que leva os dados do item para o mesmo campo alterando o botão para "Atualizar item".
+![Botão de editar item](DocImages/6.jpeg)
 
-### Code Splitting
+Atualizando a quantidade do item de 12 para 14.
+![Atualizando a quantidade do item](DocImages/7.jpeg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Demonstrando que o item foi atualizado para a quantidade descrita anteriormente (14).
+![Quantidade atualizada](DocImages/8.jpeg)
 
-### Analyzing the Bundle Size
+Utilizando o botão de excluir item da lista.
+![Utilizando o botão de excluir item](DocImages/9.jpeg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Demonstrando que o item foi excluído da lista.
+![Lista vazia após a exclusão do item](DocImages/10.jpeg)
 
-### Making a Progressive Web App
+Após adicionar novamente o item à lista, realizamos a conclusão do item no botão "marcando como comprado".
+![Botão de concluir a atividade pendente](DocImages/11.jpeg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Demonstrando que a atividade foi levada para a lista de concluído
+![Item deslocado para a lista de concluído](DocImages/12.jpeg)
 
-### Advanced Configuration
+Utilizando o botão de retornar item para a lista de pendentes
+![Botão de retorno do item para a lista de pendentes](DocImages/13.jpeg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Demonstrando que o item retornou a lista de pendentes com a data de adição dele
+![Item deslocado para a lista de pendentes](DocImages/14.jpeg)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Demonstrando o software com um item na lista de pendentes no light mode
+![Software light mode com item na lista de pendentes](DocImages/15.jpeg)
