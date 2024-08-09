@@ -2,6 +2,74 @@
 
 ## Documentação front-end
 
+### Necessidades do software
+* Tela inicial.
+* Título de descrição do software.
+* Local para recebimento dos dados (Nome do item e quantidade).
+* Botão para adicionar itens à lista.
+* Listagem distintas para atividades pendentes e atividades concluídas.
+* Botão para editar atividade.
+* Botão para excluir atividade.
+* Botão para marcar atividade como concluída.
+
+Essa foi a primeira listagem de necessidades do software que realizamos após conversa com os stakeholders, a partir disso buscando implementar e desenvolver o front-end para que cumpra com as solicitações, além de trazer um ambiente confortável e intuitivo aos usuários.
+
+#### Primeiro protótipo
+![Tela de prototipação light mode](DocImages/16.jpeg.png)
+###### Tela de prototipação light mode
+![Tela de prototipação light mode](DocImages/17.jpeg.png)
+###### Tela de prototipação dark mode
+
+A partir da primeira prototipação realizamos algumas alterações na implementação e estrutura do software, visto que, algumas funções não estavam com o funcionamento adequado e a usabilidade não estava agradável ao usuário. Por isso, realizamos alterações que foram aprovadas em discussão com a equipe para que pudéssemos entregar o melhor produto possível e que cumprisse com as necessidades do cliente com excelência.
+
+##### Novas adições
+* *_Logo dos usuários na tela principal._*
+* *_Necessidade de outro local para atualização dos dados a partir da função de edição._*
+* *_Necessidade de outro botão para atualizar os itens ao invés de "adicioná-los"._*
+* *_Adicionar botão de retomar a atividade concluída para pendente._*
+* *_Necessidade de adicionar a data adição de itens à lista pendentes._*
+* *_Necessidade de adicionar a data de compra dos itens à lista de concluído._*
+* *_Necessidade de eliminar os botões de editar, excluir e marcar como concluído na listagem de concluídos._*
+* *_Necessidade de utilizar o mesmo input para adição e edição dos itens_*
+* *_Adição do botão para transição do light para dark mode._*
+* *_Buscamos adaptar a tela para que não exista barra de rolagem na mesma, apenas dentro das lista de pendentes e concluídos. Tornando a imersão no software mais intuitiva e mais fluída quanto ao primeiro protótipo que a cada item adicionava uma barra de rolagem ainda maior na página._*
+* *_Necessidade de diferenciar o nome dos itens em cada uma das listas, sendo o item riscado quando estiver concluído_*
+
+Com as novas adições vimos o software tomar forma e suprir a necessidade dos usuários de forma fluída, intuitiva e agradável, com possibilidades que agradam tanto usuários que preferem o modelo padrão de softwares em light mode quanto os que se sentem mais confortáveis com o dark mode. Dessa forma, podemos analisar o produto que entregaríamos e estudar suas possibilidades.
+
+###### Tela inicial em dark mode.
+![Tela de início em dark mode](DocImages/2.jpeg)
+
+###### Demonstrando o software no light mode
+![Software light mode com item na lista de pendentes](DocImages/15.jpeg)
+
+### Usabilidade
+Algo que nos levou a analisar mudanças no software foi a usabilidade, que estava defasada após a prototipação inicial. Vimos a necessidade de estabalecermos uma página que proporcionasse ao usuário uma navegação fácil e visível, o que não tínhamos no primeiro modelo, já que a quanto mais itens o usuário adicionava em sua lista de pendentes ou concluído o scroll se tornava maior e a visibilidade menor.
+Portanto, realizamos a implementação de uma página imóvel, que não apresenta barra de scroll, transferindo essa barra para movimentação distintas dentro de cada uma das listagens, desse modo proporcionamos ao usuário uma experiência agradável e fluída como buscávamos desde o início.
+
+#### Campo de preenchimento do nome do produto
+Nessa campo não realizamos mudanças significativas, visto que o mesmo cumpre seu papel de forma fácil e simples. 
+
+#### Campo de preenchimento da quantidade do produto
+De forma compatível com o campo de nome, nesse também não realizamos alterações.
+
+#### Botão de adicionar item à lista
+Botão de adicionar à lista é uma peça essencial em nosso software, visto que o mesmo realiza as validações e também aplica a adição dos itens no local designado. Dessa forma o botão ficou simples, eficaz e intuitivo ao uso.
+
+#### Botão de editar item
+
+
+#### Botão de excluir item
+
+
+#### Botão de marcar item como comprado
+
+
+#### Botão de retornar item à lista de pendente
+
+
+
+
 ### Proposta dos stakeholders
 
 > _Propomos o desenvolvimento de um aplicativo de lista de compras chamado "Minha Lista de Compras", que incluirá funcionalidades de adicionar, editar, remover e marcar itens como comprados. O desenvolvimento será realizado utilizando metodologia ágil._
@@ -55,10 +123,10 @@ Após analisar cada uma das funcionalidades e discutirmos com a equipe de desenv
 * *_Necessidade de adicionar a data adição de itens à lista pendentes._*
 * *_Necessidade de adicionar a data de compra dos itens à lista de concluído._*
 * *_Necessidade de eliminar os botões de editar, excluir e marcar como concluído na listagem de concluídos._*
-* *_Necessidade de utilizar o mesmo input para adição e edição dos itens*_
+* *_Necessidade de utilizar o mesmo input para adição e edição dos itens_*
 * *_Adição do botão para transição do light para dark mode._*
 * *_Buscamos adaptar a tela para que não exista barra de rolagem na mesma, apenas dentro das lista de pendentes e concluídos. Tornando a imersão no software mais intuitiva e mais fluída quanto ao primeiro protótipo que a cada item adicionava uma barra de rolagem ainda maior na página._*
-* *_Necessidade de diferenciar o nome dos itens em cada uma das listas, sendo o item riscado quando estiver concluído*_
+* *_Necessidade de diferenciar o nome dos itens em cada uma das listas, sendo o item riscado quando estiver concluído_*
 
 Após cada uma dessas análises chegamos a prototipação final e iniciamos o processo de desenvolvimento da tela.
 
