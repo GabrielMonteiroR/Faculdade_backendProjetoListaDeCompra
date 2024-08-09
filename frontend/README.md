@@ -57,7 +57,7 @@ De forma compatível com o campo de nome, nesse também não realizamos alteraç
 Botão de adicionar à lista é uma peça essencial em nosso software, visto que o mesmo realiza as validações e também aplica a adição dos itens no local designado. Dessa forma o botão ficou simples, eficaz e intuitivo ao uso.
 
 #### Botão de editar item
-
+O botão de edição dos itens foi pensado e estruturado para que o mesmo seja visível e usual apenas na lista de "pendentes", já que se tornaria inviável editar um item que já foi comprado. O mesmo realiza a reutilização dos campos de nome e quantidade, além de reutilizar o botão de "adicionar item" para a atualização já que quando o botão de edição é ativado, ele reencaminha as informações do produto para os campos e altera o nome do botão de "adicionar item" para "atualizar item". Tornando o software flexivel, estilizado, usual e agradável.
 
 #### Botão de excluir item
 
