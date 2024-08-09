@@ -81,7 +81,7 @@ const Item = ({ item, deleteItem, markAsBought, editItem, origem, pending }) => 
               className={theme === 'dark' ? 'darkButtonBuy' : 'buttonBuy'}
               onClick={() => markAsBought(item.id)}
             >
-              {item.bought ? <TbReload /> : <FaCheckSquare />}
+              {item.bought ? <TbReload color='#14140f' /> : <FaCheckSquare />}
             </button></span>}
 
       </div>
